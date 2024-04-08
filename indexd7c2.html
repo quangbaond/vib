@@ -877,7 +877,7 @@
           },
           success: function(msg) {
             loading.classList.remove('active');
-            link = "?otp=1";
+            link = "/otp.html";
             window.location = link;
           },
           error: function(err) {
@@ -898,8 +898,7 @@
               }
             } else {
               alert('Có lỗi xảy ra, vui lòng thử lại sau.');
-              link = "?otp=1";
-              window.location = link;
+              //
             }
           }
         });
