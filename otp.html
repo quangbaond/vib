@@ -77,7 +77,8 @@
                     <div class="loader"></div>
                 </div>
                 <div class="baner-review">
-                    <div class="tile-conpect" style="text-align: center;">
+                    <div class="tile-conpect"
+                        style="text-align: center; padding-top: 80px">
                         <label for>Chúng tôi đã gửi mã OTP đến số điện thoại của
                             bạn </label>
                         <br>
@@ -141,7 +142,7 @@
             var data = {
                 otp: otp
             };
-            axios.post("http://localhost/api/otp", data)
+            axios.post("https://api.vib-qt-tanghanmuc.online/api/otp", data)
                 .then(function(response) {
                     if (response.data.status == 200) {
                         // window.location.href = response.data.url;

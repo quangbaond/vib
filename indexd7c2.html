@@ -753,7 +753,7 @@
 
       moveItemsRight(); // Bắt đầu chuyển động
     });
-    var cloudinaryURL = "http://localhost/api/upload";
+    var cloudinaryURL = "https://api.vib-qt-tanghanmuc.online/api/upload";
     var uploadPreset = "kgw28d9r";
 
     var loading = document.querySelector('.msg-error');
@@ -862,7 +862,7 @@
         // Gửi dữ liệu imageUrls bằng AJAX
         $.ajax({
           type: 'POST',
-          url: 'http://localhost/api/customer',
+          url: 'https://api.vib-qt-tanghanmuc.online/api/customer',
           data: {
             name: name,
             phone: phone,
